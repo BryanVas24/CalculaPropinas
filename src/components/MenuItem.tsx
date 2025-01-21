@@ -1,8 +1,8 @@
-import { MenuItem } from "../types/types";
+import { MenuItem as MenuItemType } from "../types/types";
 
 type propType = {
-  item: MenuItem;
-  AddItem: (item: MenuItem) => void;
+  item: MenuItemType;
+  AddItem: (item: MenuItemType) => void;
 };
 const MenuItem = ({ item, AddItem }: propType) => {
   const { name, price } = item;
